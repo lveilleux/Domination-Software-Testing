@@ -4,4 +4,6 @@
 // example: https://android.googlesource.com/platform/tools/buildSrc/+/master/base/settings.gradle
 include ':BaseGameUtils'
 project(':BaseGameUtils').projectDir = new File(rootDir.getParentFile(), 'BaseGameUtils')
+include ':AndroidME'
+project(':AndroidME').projectDir = new File(rootDir.getParentFile(), 'AndroidME')
 

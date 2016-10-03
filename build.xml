@@ -116,6 +116,7 @@
 
                 <!-- for the map chooser -->
                 <copy todir="${dir.build.classes}">
+        	        <fileset dir="res_android" includes="**/ms_*.*"/>
 	                <fileset dir="res/drawable-mdpi" includes="**/ms_*.*"/>
 		</copy>
 
@@ -230,6 +231,11 @@
 			<zipfileset dir="${dir.build.game}" prefix="${game.name}" includes="._*" defaultexcludes="no"/>
 			<zipfileset dir="${dir.build.game}" prefix="${game.name}" includes="*.sh,**/universalJavaApplicationStub" excludes="mac.sh" filemode="755"/>
 		</zip>
+	</target>
+
+	<target name="jar"
+		description="generates distribution packages"
+		depends="distribution.zip,distribution.izpack,lobby,demo">
 	</target>
 
 
@@ -550,8 +556,100 @@ svn co https://lobby.svn.sourceforge.net/svnroot/lobby/trunk
     </target>
 
 
+
+    <target name="demo" description="create game to run in me4se" depends="setup.android">
+
+        <mkdir dir="${dir.build}/swingme"/>
+        <mkdir dir="dist"/>
+
+        <javac debug="on" srcdir="src:src_android:src_mapstore" destdir="${dir.build}/swingme" source="1.5" target="1.5" classpath="${dir.libs}" excludes="net/yura/domination/android/**"/>
+
+        <copy todir="${dir.build}/swingme">
+                <fileset dir="res_android" includes="**/*.*" excludes="**/*.ini"/>
+                <fileset dir="res/drawable-mdpi" includes="**/*.*"/>
+                <fileset dir="res" includes="drawable-xhdpi/**/*.*"/>
+        </copy>
+
+        <copy todir="${dir.build}/swingme" filtering="true">
+                <fileset dir="res_android" includes="**/*.ini"/>
+                <fileset dir="${dir.properties}" includes="**/*.properties"/>
+        </copy>
+
+        <!-- copy assets into jar -->
+
+        <copy todir="${dir.build}/swingme">
+                <fileset dir="${basedir}" includes="assets/**"/>
+        </copy>
+
+        <jar destfile="dist/${game.name}4ME.jar" basedir="${dir.build}/swingme"/>
+
+    </target>
+
+    <!-- gen xml -->
+
+    <target name="generate" description="generate the persistance manager class">
+
+	<path id="class.path">
+	    <fileset dir="lib">
+		<include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dir.dist}">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+
+        <taskdef classname="net.yura.tools.mobilegen.MobileXmlGen" classpathref="class.path" name="gen-xml"/>
+        <gen-xml
+            classNamesFile="${basedir}/game/gen.properties"
+            outputPackage="net.yura.domination.mapstore.gen"
+            outputClass="XMLMapAccess"
+            sourceRoot="${basedir}/src_mapstore"/>
+
+    </target>
+
+
     <target name="run" depends="game" description="override default run action of netbeans">
         <java dir="${dir.build.game}" jar="${dir.build.game}/${game.name}.jar"/>
+    </target>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <import file="${sdk.dir}/tools/ant/build.xml"/> -->
+
+<!--
+some changes need to be made to the ${sdk.dir}/tools/ant/build.xml file
+1. at the top it says name="", delete this to leave <project default="debug">
+2. comment out the line: <fileset dir="${source.absolute.dir}" excludes="**/*.java ${android.package.excludes}" />
+-->
+
+    <target name="android" description="build and run on android" depends="setup.android">
+
+        <property file="local.properties" />
+        <property file="ant.properties" />
+        <property environment="env" />
+        <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+            <isset property="env.ANDROID_HOME" />
+        </condition>
+        <loadproperties srcFile="project.properties" />
+        <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project'"
+            unless="sdk.dir"
+        />
+
+        <ant antfile="${sdk.dir}/tools/ant/build.xml">
+            <target name="clean"/>
+            <target name="debug"/>
+            <target name="install"/>
+        </ant>
+
     </target>
 
 </project>
