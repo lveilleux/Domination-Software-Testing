@@ -24,6 +24,7 @@
 	<property name="game.defaultcards" value="risk.cards"/>
         <!-- -->
 
+		<property name="JUNIT_HOME" value="TestLibraries/"/>
 	<!-- - ->
 	<property name="game.name" value="Risk"/>
 	<property name="game.website" value="http://risk.sf.net/"/>
