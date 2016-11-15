@@ -10,7 +10,6 @@ import net.yura.domination.engine.core.Player;
 import net.yura.domination.engine.core.RiskGame;
 
 public class AISimulationTest extends TestCase{
-/*	
 	private static boolean debug = false;
 	int state = 0;
 	
@@ -93,5 +92,4 @@ public class AISimulationTest extends TestCase{
 			}
 		}
 	}
-*/
 }

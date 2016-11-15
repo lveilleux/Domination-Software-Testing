@@ -18,9 +18,6 @@ public class ContinentTest extends TestCase {
     @Before
     public void setUp() throws Exception {
         super.setUp();
-        id = "CONTINENT_ID";
-        name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
     }
     
     @After
@@ -30,6 +27,9 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testCreateContinent() {
+        id = "CONTINENT_ID";
+        name = "CONTINENT";
+        Continent c = new Continent(id, name, 5, 2);
         assertEquals(id, c.getIdString());
         assertEquals(name, c.getName());
         assertEquals(5, c.getArmyValue());
@@ -38,6 +38,9 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testContinentToString() {
+        id = "CONTINENT_ID";
+        name = "CONTINENT";
+        Continent c = new Continent(id, name, 5, 2);
         assertEquals(id + " [" + 5 + "]", c.toString());
         c.setArmyValue(0);
         assertEquals(id, c.toString());
@@ -45,6 +48,9 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testArmyValue() {
+        id = "CONTINENT_ID";
+        name = "CONTINENT";
+        Continent c = new Continent(id, name, 5, 2);
         assertEquals(5, c.getArmyValue());
         c.setArmyValue(0);
         assertEquals(0, c.getArmyValue());
@@ -54,6 +60,9 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testColor() {
+        id = "CONTINENT_ID";
+        name = "CONTINENT";
+        Continent c = new Continent(id, name, 5, 2);
         assertEquals(2, c.getColor());
         c.setColor(1);
         assertEquals(1, c.getColor());
