@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Razer-Blade-Stealth" name="net.yura.domination.engine.core.CountryTest" skipped="0" tests="10" time="0.063" timestamp="2016-10-17T21:58:01">
+<testsuite errors="0" failures="0" hostname="Razer-Blade-Stealth" name="net.yura.domination.engine.core.CountryTest" skipped="0" tests="10" time="0.065" timestamp="2016-10-31T20:32:32">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -65,7 +65,7 @@
     <property name="dir.lobby.dist.client" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Lobby\dist\client" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.yura.domination.engine.core.CountryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\test\results\TEST-net.yura.domination.engine.core.CountryTest.xml crashfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junitvmwatcher9081291789037517449.properties propsfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junit6879923850312864259.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.yura.domination.engine.core.CountryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\test\results\TEST-net.yura.domination.engine.core.CountryTest.xml crashfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junitvmwatcher8049264685475709367.properties propsfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junit1158628630502847362.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="jnlp.descriptor" value="application" />
@@ -110,7 +110,7 @@
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
     <property name="src.res_android.dir" value="res_android" />
-    <property name="javac.includesfile.binary" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\null192706757" />
+    <property name="javac.includesfile.binary" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\null1297546824" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value="lib/jnlp.jar:lib/LobbyClient.jar:lib/LobbyServer.jar:lib/TranslationTool.jar:lib/midletrunner.jar:lib/Grasshopper.jar:lib/SwingME.jar:libs/httpmime-4.1.2.jar:libs/httpcore-4.1.2.jar:lib/jfreechart-1.0.15.jar:build/classes:C:\Program Files\NetBeans 8.1\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.1\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -131,7 +131,7 @@
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans 8.1\platform\modules\ext\testng-6.8.1-dist.jar" />
     <property name="libs.absolutelayout.maven-pom" value="" />
     <property name="ant.java.version" value="1.8" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;c:\program files\imagemagick-7.0.3-q16;c:\programdata\oracle\java\javapath;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\intel\intel(r) management engine components\ipt;c:\program files (x86)\windows kits\8.1\windows performance toolkit\;c:\program files\git\cmd;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\;C:\Users\Luke\AppData\Local\Microsoft\WindowsApps;C:\Users\Luke\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;." />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;c:\program files\imagemagick-7.0.3-q16;c:\programdata\oracle\java\javapath;c:\program files (x86)\razer chroma sdk\bin;c:\program files\razer chroma sdk\bin;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\intel\intel(r) management engine components\ipt;c:\program files (x86)\windows kits\8.1\windows performance toolkit\;c:\program files\git\cmd;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\;C:\Users\Luke\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Luke\AppData\Local\Programs\Python\Python35\;C:\Users\Luke\AppData\Local\Microsoft\WindowsApps;C:\Users\Luke\AppData\Roaming\npm;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_101\bin\;." />
     <property name="javadoc.author" value="false" />
     <property name="libs.metro.maven-pom" value="" />
     <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
@@ -391,7 +391,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
     <property name="libs.metro.src" value="" />
     <property name="endorsed.classpath" value="" />
-    <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\AbsoluteLayout.jar" />
+    <property name="libs.absolutelayout.classpath" value="C:\Users\Luke\AppData\Roaming\NetBeans\8.1\modules\ext\AbsoluteLayout.jar" />
     <property name="excludes" value="net\yura\domination\android\**" />
     <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.metro.classpath" value="C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-extra-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-extra.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-rt.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-tools.jar" />
@@ -450,14 +450,14 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetContinent" time="0.002" />
+  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetContinent" time="0.003" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetX" time="0.002" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetY" time="0.0" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testAddArmies" time="0.0" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetIdString" time="0.0" />
-  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetColorInt" time="0.0" />
-  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testCreateCountry" time="0.001" />
-  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetName" time="0.0" />
+  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetColorInt" time="0.001" />
+  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testCreateCountry" time="0.0" />
+  <testcase classname="net.yura.domination.engine.core.CountryTest" name="testSetName" time="0.001" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testDistanceTo" time="0.0" />
   <testcase classname="net.yura.domination.engine.core.CountryTest" name="testAddNegativeArmies" time="0.0" />
   <system-out><![CDATA[]]></system-out>
