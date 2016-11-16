@@ -14,9 +14,16 @@ import org.junit.Test;
 public class ContinentTest extends TestCase {
     private Continent c;
     private String id, name;
+    private Country country, country2;
+    private Player p1, p2;
     
     @Before
     public void setUp() throws Exception {
+        id = "CONTINENT_ID";
+        name = "CONTINENT";
+        Continent c = new Continent(id, name, 5, 2);
+        country = new Country(0, "c1", "Country 1", c, 0, 0);
+        country2 = new Country(1, "c2", "Country 2", c, 50, 50);
         super.setUp();
     }
     
@@ -27,9 +34,6 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testCreateContinent() {
-        id = "CONTINENT_ID";
-        name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
         assertEquals(id, c.getIdString());
         assertEquals(name, c.getName());
         assertEquals(5, c.getArmyValue());
@@ -38,9 +42,6 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testContinentToString() {
-        id = "CONTINENT_ID";
-        name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
         assertEquals(id + " [" + 5 + "]", c.toString());
         c.setArmyValue(0);
         assertEquals(id, c.toString());
@@ -48,9 +49,6 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testArmyValue() {
-        id = "CONTINENT_ID";
-        name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
         assertEquals(5, c.getArmyValue());
         c.setArmyValue(0);
         assertEquals(0, c.getArmyValue());
@@ -60,13 +58,56 @@ public class ContinentTest extends TestCase {
     
     @Test
     public void testColor() {
-        id = "CONTINENT_ID";
-        name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
         assertEquals(2, c.getColor());
         c.setColor(1);
         assertEquals(1, c.getColor());
     }
     
+    @Test
+    public void testTerritoriesContained() {
+        assertFalse(c.getTerritoriesContained().contains(country));
+        
+        c.addTerritoriesContained(country);
+        assertTrue(c.getTerritoriesContained().contains(country));
+        
+        c.addTerritoriesContained(country2);
+        assertTrue(c.getTerritoriesContained().contains(country2));
+    }
     
+    @Test
+    public void testGetOwner() {
+        assertEquals(null, country.getOwner());
+        
+        country.setOwner(p1);
+        assertEquals("Player 1", country.getOwner().toString());
+        
+        country.setOwner(p2);
+        assertEquals("Player 2", country.getOwner().toString());
+    }
+    
+    @Test
+    public void testGetNumberOwned() {
+        assertEquals(0, c.getNumberOwned(p1));
+        
+        c.addTerritoriesContained(country);
+        country.setOwner(p1);
+        assertEquals(1, c.getNumberOwned(p1));
+        
+        c.addTerritoriesContained(country2);
+        country2.setOwner(p1);
+        assertEquals(2, c.getNumberOwned(p1));
+    }
+    
+    @Test
+    public void testIsOwned() {
+        c.addTerritoriesContained(country);
+        country.setOwner(p1);
+        assertTrue(c.isOwned(p1));
+        
+        c.addTerritoriesContained(country2);
+        assertFalse(c.isOwned(p1));
+        
+        country2.setOwner(p2);
+        assertTrue(c.isOwned(p2));
+    }
 }

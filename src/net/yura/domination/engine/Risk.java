@@ -168,43 +168,6 @@ public class Risk extends Thread {
                         catch(Throwable th) {
 				return "sandbox" + randomString;
 			}
-/*
-
-			//InetAddress localAddr = InetAddress.getLocalHost();
-
-			//myAddress = localAddr.getHostAddress();
-
-			myAddress=null;
-			Enumeration ifaces = NetworkInterface.getNetworkInterfaces();
-
-			search:
-			while (ifaces.hasMoreElements()) {
-				NetworkInterface ni = (NetworkInterface)ifaces.nextElement();
-				//System.out.println(ni.getName() + ":");
-
-				Enumeration addrs = ni.getInetAddresses();
-
-				while (addrs.hasMoreElements()) {
-					InetAddress ia = (InetAddress)addrs.nextElement();
-					//System.out.println(" " + ia.getHostAddress());
-
-
-					String tmpAddr = ia.getHostAddress();
-					if (!tmpAddr.equals("127.0.0.1")) {
-
-						myAddress = tmpAddr;
-						break search;
-
-					}
-
-
-				}
-			}
-
-			if (myAddress==null) {
-				throw new Exception("no IP found");
-			}
-*/
 
 		}
 		catch (Exception e) { // if network has not been setup
@@ -324,7 +287,7 @@ public class Risk extends Thread {
             }
         }
 
-        private void processFromUI(String message) {
+        void processFromUI(String message) {
 
                 if ( message.trim().length()==0 ) {
                         controller.sendMessage(">", false, false );
@@ -435,7 +398,7 @@ public class Risk extends Thread {
 
 	}
 
-        private void noGameParser(String message) {
+        void noGameParser(String message) {
 
                 StringTokenizer StringT = new StringTokenizer( message );
 
@@ -2831,7 +2794,7 @@ RiskUtil.printStackTrace(e);
                 getInput();
         }
 
-        private void renamePlayer(String name,String newName, String newAddress,int newType) {
+        void renamePlayer(String name,String newName, String newAddress,int newType) {
 
                 if ("".equals(name) || "".equals(newName) || "".equals(newAddress) || newType==-1) {
                     throw new IllegalArgumentException("bad rename "+name+" "+newName+" "+newAddress+" "+newType);

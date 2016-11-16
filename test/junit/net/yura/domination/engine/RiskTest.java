@@ -58,8 +58,6 @@ public class RiskTest extends TestCase {
      * Test getRiskConfig.
      */
     public void testGetRiskConfig() {
-        System.out.println("getRiskConfig");
-        
         Properties riskConfig = mock(Properties.class);
         Risk instance = new Risk();
         instance.riskconfig = riskConfig;
@@ -74,8 +72,6 @@ public class RiskTest extends TestCase {
      * Test inGameParser.
      */
     public void testInGameParser() {
-        System.out.println("inGameParser");
-        
         RiskController rc = mock(RiskController.class);
         RiskGame game = mock(RiskGame.class);
         
@@ -230,13 +226,31 @@ public class RiskTest extends TestCase {
         instance.inGameParser(message);
     }
 
+    
+    /**
+     * Test setMap.
+     */
+    public void testSetMap() throws Exception {
+        System.out.println("setMap");
+        
+        RiskController rc = mock(RiskController.class);
+        Risk instance = new Risk();
+        instance.controller = rc;
+        RiskGame game = mock(RiskGame.class);
+        instance.game = game;
+        instance.resb = resourceBundle;
+        when(game.getState()).thenReturn(RiskGame.STATE_ATTACKING);
+        String filename = "test";
+        //instance.setMap(filename);
+        
+        when(game.getState()).thenReturn(RiskGame.STATE_NEW_GAME);
+        //instance.setMap(filename);
+    }
 
     /**
      * Test getType.
      */
     public void testGetType_int() {
-        System.out.println("getType");
-        
         int type = 0;
         Risk instance = new Risk();
         String expResult = "human";
@@ -253,8 +267,6 @@ public class RiskTest extends TestCase {
      * Test setReplay.
      */
     public void testSetReplay() {
-        System.out.println("setReplay");
-        
         boolean a = false;
         Risk instance = new Risk();
         instance.setReplay(a);
@@ -264,8 +276,6 @@ public class RiskTest extends TestCase {
      * Test getCurrentCards.
      */
     public void testGetCurrentCards() {
-        System.out.println("getCurrentCards");
-        
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
         instance.game = game;
@@ -281,8 +291,6 @@ public class RiskTest extends TestCase {
      * Test hasArmiesInt.
      */
     public void testHasArmiesInt() {
-        System.out.println("hasArmiesInt");
-        
         int name = 0;
         Risk instance = new Risk();
         int expResult = 7;
@@ -299,8 +307,6 @@ public class RiskTest extends TestCase {
      * Test canAttack.
      */
     public void testCanAttack() {
-        System.out.println("canAttack");
-        
         int nCountryFrom = 0;
         int nCountryTo = 1;
         Risk instance = new Risk();
@@ -321,8 +327,6 @@ public class RiskTest extends TestCase {
      * Test isOwnedCurrentPlayerInt.
      */
     public void testIsOwnedCurrentPlayerInt() {
-        System.out.println("isOwnedCurrentPlayerInt");
-        
         int name = 0;
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
@@ -344,8 +348,6 @@ public class RiskTest extends TestCase {
      * Test getPlayerColors.
      */
     public void testGetPlayerColors() {
-        System.out.println("getPlayerColors");
-        
         Risk instance = new Risk();
         instance.game = null;
         assertTrue(instance.getPlayerColors().length == 0);
@@ -375,8 +377,6 @@ public class RiskTest extends TestCase {
      * Test getCurrentPlayerColor.
      */
     public void testGetCurrentPlayerColor() {
-        System.out.println("getCurrentPlayerColor");
-        
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
         instance.game = game;
@@ -396,8 +396,6 @@ public class RiskTest extends TestCase {
      * Test getColorOfOwner.
      */
     public void testGetColorOfOwner() {
-        System.out.println("getColorOfOwner");
-        
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
         instance.game = game;
@@ -416,8 +414,6 @@ public class RiskTest extends TestCase {
      * Test canTrade.
      */
     public void testCanTrade() {
-        System.out.println("canTrade");
-        
         String c1 = "c1";
         String c2 = "c2";
         String c3 = "c3";
@@ -444,8 +440,6 @@ public class RiskTest extends TestCase {
      * Test getNewCardState.
      */
     public void testGetNewCardState() {
-        System.out.println("getNewCardState");
-        
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
         instance.game = game;
@@ -458,8 +452,6 @@ public class RiskTest extends TestCase {
      * Test getGame.
      */
     public void testGetGame() {
-        System.out.println("getGame");
-        
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
         instance.game = game;
@@ -470,8 +462,6 @@ public class RiskTest extends TestCase {
      * Test getLocalGame.
      */
     public void testGetLocalGame() {
-        System.out.println("getLocalGame");
-        
         Risk instance = new Risk();
         instance.unlimitedLocalMode = false;
         assertFalse(instance.getLocalGame());
@@ -481,8 +471,6 @@ public class RiskTest extends TestCase {
      * Test getCountryName.
      */
     public void testGetCountryName() {
-        System.out.println("getCountryName");
-        
         int c = 3;
         Risk instance = new Risk();
         String expResult = "the country's name";
@@ -500,8 +488,6 @@ public class RiskTest extends TestCase {
      * Test getCountryCapital.
      */
     public void testGetCountryCapital() {
-        System.out.println("getCountryCapital");
-        
         int c = 5;
         Risk instance = new Risk();
         RiskGame game = mock(RiskGame.class);
@@ -522,8 +508,6 @@ public class RiskTest extends TestCase {
      * Test getAutoEndGo.
      */
     public void testGetAutoEndGo() {
-        System.out.println("getAutoEndGo");
-        
         Risk instance = new Risk();
         instance.game = null;
         assertFalse(instance.getAutoEndGo());
@@ -540,8 +524,6 @@ public class RiskTest extends TestCase {
      * Test getAutoDefend.
      */
     public void testGetAutoDefend() {
-        System.out.println("getAutoDefend");
-        
         Risk instance = new Risk();
         instance.game = null;
         assertFalse(instance.getAutoDefend());
@@ -558,8 +540,6 @@ public class RiskTest extends TestCase {
      * Test getMyAddress.
      */
     public void testGetMyAddress() {
-        System.out.println("getMyAddress");
-        
         Risk instance = new Risk();
         String address = "a";
         instance.myAddress = address;
@@ -570,7 +550,6 @@ public class RiskTest extends TestCase {
      * Test showMessageDialog.
      */
     public void testShowMessageDialog() {
-        System.out.println("showMessageDialog");
         String a = "a";
         Risk instance = new Risk();
         RiskController rc = mock(RiskController.class);
@@ -582,8 +561,6 @@ public class RiskTest extends TestCase {
      * Test setOnlinePlay.
      */
     public void testSetOnlinePlay() {
-        System.out.println("setOnlinePlay");
-        
         OnlineRisk online = mock(OnlineRisk.class);
         Risk instance = new Risk();
         instance.setOnlinePlay(online);
@@ -594,8 +571,6 @@ public class RiskTest extends TestCase {
      * Test setAddress.
      */
     public void testSetAddress() {
-        System.out.println("setAddress");
-        
         String address = "a";
         Risk instance = new Risk();
         instance.setAddress(address);
@@ -606,8 +581,6 @@ public class RiskTest extends TestCase {
      * Test findEmptySpot.
      */
     public void testFindEmptySpot() {
-        System.out.println("findEmptySpot");
-        
         Risk instance = new Risk();
         instance.game = null;
         assertNull(instance.findEmptySpot());
@@ -622,5 +595,161 @@ public class RiskTest extends TestCase {
         when(p.isAlive()).thenReturn(true);
         
         assertEquals(p, instance.findEmptySpot());
+    }
+    
+    
+    public void testProcessFromUI() {
+        System.out.println("processFromUI");
+        
+        Risk instance = new Risk();
+        RiskController rc = mock(RiskController.class);
+        instance.controller = rc;
+        instance.inbox.add("dummy message");
+        
+        String message = "";
+        instance.processFromUI(message);
+        
+        message = "ver";
+        instance.processFromUI(message);
+        
+        message = "rem stuff";
+        instance.processFromUI(message);
+        
+        instance.resb = resourceBundle;
+        message = "whatever";
+        instance.game = null;
+        instance.processFromUI(message);
+        
+        RiskGame game = mock(RiskGame.class);
+        instance.game = game;
+        message = "closegame";
+        OnlineRisk online = mock(OnlineRisk.class);
+        instance.onlinePlayClient = online;
+        instance.processFromUI(message);
+        instance.game = game;
+        instance.inbox.add("dummy message");
+        
+        message = "closegame stuff";
+        instance.processFromUI(message);
+        
+        message = "savegame";
+        instance.processFromUI(message);
+        
+        message = "savegame stuff";
+        instance.unlimitedLocalMode = false;
+        instance.processFromUI(message);
+        
+        instance.unlimitedLocalMode = true;
+        message = "savegame stuff things";
+        instance.processFromUI(message);
+        
+        message = "replay";
+        Vector v = new Vector();
+        v.add("command");
+        when(game.getCommands()).thenReturn(v);
+        instance.processFromUI(message);
+        
+        instance.unlimitedLocalMode = false;
+        instance.processFromUI(message);
+        
+        message = "replay stuff";
+        instance.processFromUI(message);
+        
+        message = "whatever";
+        instance.onlinePlayClient = null;
+        instance.processFromUI(message);
+        
+        instance.onlinePlayClient = online;
+        instance.processFromUI(message);
+        
+        message = "replay newgame more";
+        instance.game = null;
+        instance.processFromUI(message);
+        
+        message = "replay newgame";
+        instance.processFromUI(message);
+        
+        message = "replay loadgame";
+        instance.processFromUI(message);
+        
+        message = "replay join";
+        instance.processFromUI(message);
+        
+        message = "replay join stuff";
+        instance.processFromUI(message);
+        
+        message = "replay startserver stuff";
+        instance.processFromUI(message);
+        
+        message = "replay startserver";
+        instance.processFromUI(message);
+        
+        message = "replay killserver stuff";
+        instance.processFromUI(message);
+        
+        message = "replay killserver";
+        instance.processFromUI(message);
+        
+        message = "unknown";
+        instance.processFromUI(message);
+    }
+    
+    public void testNoGameParser() {
+        System.out.println("noGameParser");
+        
+        Risk instance = new Risk();
+        RiskController rc = mock(RiskController.class);
+        instance.controller = rc;
+        instance.resb = resourceBundle;
+        instance.inbox.add("dummy message");
+        
+        String message = "newgame error";
+        instance.noGameParser(message);
+        
+        message = "newgame";
+        instance.noGameParser(message);
+        
+        message = "newgame new";
+        instance.noGameParser(message);
+        
+        message = "loadgame";
+        instance.noGameParser(message);
+        
+        message = "loadgame test";
+        instance.noGameParser(message);
+        
+        message = "join";
+        instance.noGameParser(message);
+        
+        message = "join stuff";
+        instance.noGameParser(message);
+        
+        message = "startserver error";
+        instance.noGameParser(message);
+        
+        message = "startserver";
+        instance.noGameParser(message);
+        
+        message = "killserver error";
+        instance.noGameParser(message);
+        
+        message = "killserver";
+        instance.noGameParser(message);
+        
+        message = "unknown";
+        instance.noGameParser(message);
+    }
+    
+    public void testRenamePlayer() {
+        Risk instance = new Risk();
+        RiskGame game = mock(RiskGame.class);
+        instance.game = game;
+        Vector v = new Vector();
+        Player p = new Player(0, "name", 0, "0");
+        v.add(p);
+        when(game.getPlayers()).thenReturn(v);
+        
+        instance.renamePlayer("name", "newname", "1", 1);
+        assertEquals("newname", p.getName());
     }
 }

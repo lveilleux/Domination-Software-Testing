@@ -3,17 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/core/Country.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/core/Continent.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/core/Card.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/core/ContinentTest.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/core/MissionTest.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/ai/AISimulationTest.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/core/CardTest.java</file>
+            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/RiskControllerTest.java</file>
+            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/RiskUIUtilTest.java</file>
             <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/core/PlayerTest.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/core/CountryTest.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/core/Mission.java</file>
-            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/src/net/yura/domination/engine/core/Player.java</file>
+            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/RiskUtilTest.java</file>
+            <file>file:/C:/Users/Luke/Documents/SWEN/352/domination-code-1611/Domination/test/junit/net/yura/domination/engine/RiskTest.java</file>
         </group>
     </open-files>
 </project-private>

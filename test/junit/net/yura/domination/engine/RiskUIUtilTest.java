@@ -4,9 +4,10 @@ import java.io.File;
 import junit.framework.TestCase;
 import net.yura.domination.tools.mapeditor.MapEditor;
 import net.yura.domination.tools.mapeditor.MapsTools;
+import org.junit.Test;
 
 /**
- * @author Yura Mamyrin
+ * SWEN 352 Testing Risk UI Utility class functions
  */
 public class RiskUIUtilTest extends TestCase {
     
@@ -14,9 +15,8 @@ public class RiskUIUtilTest extends TestCase {
         super(testName);
     }
 
+    @Test
     public void testGetURL() {
-        System.out.println("getURL");
-
         assertEquals("http://yura.net/", RiskUIUtil.getURL("http://yura.net/"));
         assertEquals("http://yura.net/", RiskUIUtil.getURL("hello http://yura.net/ world"));
         assertEquals("http://yura.net/", RiskUIUtil.getURL("hello http://yura.net/\nworld"));
@@ -30,9 +30,8 @@ public class RiskUIUtilTest extends TestCase {
         assertEquals(null, RiskUIUtil.getURL(""));
     }
     
+    @Test
     public void testGetSafeMapID() {
-        System.out.println("getSafeMapID");
-        
         assertEquals("bob", MapsTools.getSafeMapID("bob.map"));
         assertEquals("bobTheBuilder", MapsTools.getSafeMapID("bob the builder.map"));
         assertEquals("bobTheBuilder", MapsTools.getSafeMapID("bobTheBuilder.map"));
@@ -46,15 +45,13 @@ public class RiskUIUtilTest extends TestCase {
         assertEquals("", MapsTools.getSafeMapID(""));
     }
 
+    @Test
     public void testGetExtension() {
-        System.out.println("getExtension");
-        
         assertEquals("jpeg", MapEditor.getExtension( new File("file.jpeg") ));
         assertEquals("jpg", MapEditor.getExtension( new File("file.something.jpg") ));
         assertEquals("", MapEditor.getExtension( new File(".file") ));
         assertEquals("", MapEditor.getExtension( new File("file") ));
         assertEquals("JPG", MapEditor.getExtension( new File("Something.JPG") ));
         assertEquals("PNG", MapEditor.getExtension( new File(".FILE.2.PNG") ));
-    }
-    
+    }  
 }
