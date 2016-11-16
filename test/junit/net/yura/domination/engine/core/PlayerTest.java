@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Vector;
 import junit.framework.TestCase;
 import net.yura.domination.engine.ColorUtil;
+import org.junit.Test;
 import static org.mockito.Mockito.*;
 
 /**
@@ -31,11 +32,7 @@ public class PlayerTest extends TestCase {
     @Override
     protected void setUp() throws Exception {
         // Instaniate test Player instance
-        mPlayer = new Player( Player.PLAYER_HUMAN,
-                              "TestHuman",
-                              ColorUtil.BLACK,
-                              "TestAddress" );
-        
+        mPlayer = new Player( Player.PLAYER_HUMAN, "TestHuman", ColorUtil.BLACK, "TestAddress" );
         super.setUp();
     }
     
@@ -55,7 +52,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test nextTurn.
      */
-	@Test
+    @Test
     public void testNextTurn() {        
         // Test 1. Perform next turn
         // Get the current list of Statistic objects
@@ -72,7 +69,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test addArmies.
      */
-	@Test
+    @Test
     public void testAddArmies() {
         // Test 1. Add a single army
         // Get the original amount of extra armies
@@ -110,7 +107,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test loseExtraArmy.
      */
-	@Test
+    @Test
     public void testLoseExtraArmy() {
         // Test 1. Lose a single army
         // Set up some armies
@@ -158,7 +155,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test giveCard.
      */
-	@Test
+    @Test
     public void testGiveCard() {
         // Test 1. Add a card
         // Get current card list
@@ -177,7 +174,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test takeCard.
      */
-	@Test
+    @Test
     public void testTakeCard() {
         // Test 1. Take first card from a one card list
         // Add a mocked card
@@ -223,7 +220,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test tradeInCards.
      */
-	@Test
+    @Test
     public void testTradeInCards() {
         // Test 1. First card adds armies
         // Add mock territory
@@ -310,7 +307,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test newCountry.
      */
-	@Test
+    @Test
     public void testNewCountry() {
         // Test 1. Constructed player has empty territories
         // Get territory Vector
@@ -342,7 +339,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test of lostCountry method, of class Player.
      */
-	@Test
+    @Test
     public void testLostCountry() {
         // Test 1. Verify losing the only territory
         // Add a mocked territory
@@ -395,7 +392,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test addPlayersEliminated.
      */
-	@Test
+    @Test
     public void testAddPlayersEliminated() {
         // Test 1. No players have been eliminated in construction
         // Verify empty eliminated players Vectory
@@ -426,7 +423,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test isAlive.
      */
-	@Test
+    @Test
     public void testIsAlive() {
         // Test 1. Verify not alive during construction
         assertFalse( "Player is alive", mPlayer.isAlive() );
@@ -468,7 +465,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test rename.
      */
-	@Test
+    @Test
     public void testRename() {
         // Test 1. Rename
         // Rename player
@@ -489,7 +486,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test setColor.
      */
-	@Test
+    @Test
     public void testSetColor() {
         // Test 1. Set new color
         // Set new color
@@ -502,7 +499,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test toString.
      */
-	@Test
+    @Test
     public void testToString() {
         // Test 1. ToString returns constructed name
         // Verify ToString returns the constructed name
@@ -520,7 +517,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test setAddress.
      */
-	@Test
+    @Test
     public void testSetAddress() {
         // Test 1. GetAddress returns constructed address
         // Verify GetAddress returns the constructed address
@@ -538,7 +535,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test setCapital.
      */
-	@Test
+    @Test
     public void testSetCapital() {
         // Test 1. GetCapital returns NULL constructed capital
         // Verify GetCapital returns NULL constructed capital
@@ -556,7 +553,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test setMission.
      */
-	@Test
+    @Test
     public void testSetMission() {
         // Test 1. GetMission returns NULL constructed mission
         // Verify GetMission returns NULL constructed mission
@@ -574,7 +571,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test getNoArmies.
      */
-	@Test
+    @Test
     public void testGetNoArmies() {
         // Test 1. Get number of armies after construction
         // Verify 0 armies after construction
@@ -611,7 +608,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test setType
      */
-	@Test
+    @Test
     public void testSetType() {
         // Test 1. Get type after construction
         // Verify constructed type is correct
@@ -651,7 +648,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test AutoEndGo.
      */
-	@Test
+    @Test
     public void testSetAutoEndGo() {
         // Test 1. Constructed to true
         // Verify autoendgo was constructed to true
@@ -677,7 +674,7 @@ public class PlayerTest extends TestCase {
     /**
      * Test AutoDefend.
      */
-	@Test
+    @Test
     public void testSetAutoDefend() {   
         // Test 1. Constructed to true
         // Verify autodefend was constructed to true

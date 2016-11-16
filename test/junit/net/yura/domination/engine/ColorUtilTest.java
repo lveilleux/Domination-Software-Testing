@@ -3,6 +3,7 @@ package net.yura.domination.engine;
 import java.util.HashMap;
 import java.util.Map;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  *SWEN 352 Testing ColorUtil.java
@@ -53,7 +54,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test of add.
      */
-	@Test
+    @Test
     public void testAdd() {
         // Test 1. Add brand new color
         // Get the original map sizes
@@ -97,7 +98,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test of getStringForColor.
      */
-	@Test
+    @Test
     public void testGetStringForColor() {
         // Test 1. Get string from predefined color
         assertEquals("Returned predefined color string does not match intToString get", ColorUtil.intToString.get(ColorUtil.BLUE),
@@ -138,7 +139,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test getTextColorFor.
      */
-	@Test
+    @Test
     public void testGetTextColorFor() {
         // Test 1. Boundary testing expecting return BLACK
         int[] colorArray = new int[] { 0xFFF53333, 0xFF33F533, 0xFFC8C833, 0xFFF0F133, 0xFFF1F033, ColorUtil.BLACK };
@@ -157,7 +158,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test getRed.
      */
-	@Test
+    @Test
     public void testGetRed() {
         // Test 1. Verify the correct red component value is returned
         assertEquals( "Returned an incorrect value for the red component", 33, ColorUtil.getRed( 0xFF2180CA ) );
@@ -172,7 +173,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test getGreen.
      */
-	@Test
+    @Test
     public void testGetGreen() {
         // Test 1. Verify the correct green component value is returned
         assertEquals( "Returned an incorrect value for the green component", 33, ColorUtil.getGreen( 0xFF602160 ) );
@@ -187,7 +188,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test of getBlue.
      */
-	@Test
+    @Test
     public void testGetBlue() {
         // Test 1. Verify the correct blue component value is returned
         assertEquals( "Returned an incorrect value for the blue component", 33, ColorUtil.getBlue( 0xFF606021 ) );
@@ -202,7 +203,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test getAlpha.
      */
-	@Test
+    @Test
     public void testGetAlpha() {
         // Test 1. Verify the correct alpha component value is returned
         assertEquals( "Returned an incorrect value for the alpha component", 33, ColorUtil.getAlpha( 0x218060CA ) );
@@ -217,7 +218,7 @@ public class ColorUtilTest extends TestCase {
     /**
      * Test getHexForColor.
      */
-	@Test
+    @Test
     public void testGetHexForColor() {
         // Test 1. Test correct string returned
         assertEquals( "Returned incorrect string", "#123456", ColorUtil.getHexForColor( 0xFF123456 ) );
