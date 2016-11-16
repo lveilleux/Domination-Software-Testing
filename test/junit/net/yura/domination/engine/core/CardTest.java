@@ -10,7 +10,7 @@ import org.junit.Test;
 
 /**
  * Test the Card.java class in the engine.core files
- * @author Luke - SWEN 352
+ * SWEN 352
  */
 public class CardTest extends TestCase {
     public CardTest() {
@@ -27,6 +27,9 @@ public class CardTest extends TestCase {
         super.tearDown();
     }
     
+	/**
+	 * Test initial values.
+	 */
     @Test
     public void testCreateCard() {
         Continent continent = new Continent("CustomContinent", "Northrend", 10, 2);
@@ -36,20 +39,19 @@ public class CardTest extends TestCase {
         assertEquals("Cannon", card.getName());
     }
     
-        public void testCreateCardNullValue() {
+	/**
+	 * Test creation with null.
+	 */
+	@Test
+    public void testCreateCardNullValue() {
         Card card = new Card("Cannon", null);
         assertEquals(null, card.getCountry());
         assertEquals("Cannon", card.getName());
     }
-/*    
-    @Test(expected = IllegalArgumentException.class)
-    public void testExceptionThrownInSetName() {
-        Continent continent = new Continent("CustomContinent", "Northrend", 10, 2);
-        Country c = new Country(1, "Custom", "Redshire", continent, 102, 203);
-        Card card = new Card("Cannon", c);
-        card.setName("RANDOM");
-    }
-*/
+	
+	/**
+	 * Test setName.
+	 */
     @Test
     public void testSetName() {
         Card card = new Card("Cannon", null);
@@ -63,6 +65,9 @@ public class CardTest extends TestCase {
         assertEquals("wildcard", card.getName());
     }
     
+	/**
+	 * Test setCountry.
+	 */
     @Test
     public void testSetCountry() {
         Continent continent = new Continent("CustomContinent", "Northrend", 10, 2);
@@ -77,6 +82,9 @@ public class CardTest extends TestCase {
         assertEquals(c2, card.getCountry());
     }
     
+	/**
+	 * Test toString.
+	 */
     @Test
     public void testToString() {
         Continent continent = new Continent("CustomContinent", "Northrend", 10, 2);
@@ -86,5 +94,4 @@ public class CardTest extends TestCase {
         card.setCountry(c);
         assertEquals("Cannon - Custom (1)", card.toString());
     }
-    
 }
