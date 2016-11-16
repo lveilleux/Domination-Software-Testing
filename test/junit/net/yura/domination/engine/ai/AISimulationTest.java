@@ -19,7 +19,6 @@ public class AISimulationTest extends TestCase{
 	int other;
 	
 	public void testSomething() throws InterruptedException {
-            /*
 		RiskUIUtil.parseArgs(new String[] {});
 		final Risk risk = new Risk();
 		risk.addRiskListener(new RiskAdapter() {
@@ -54,11 +53,9 @@ public class AISimulationTest extends TestCase{
 		assertTrue(avg <= hard);
 		risk.kill();
 		risk.join();
-            */
 	}
 
 	private void playGame(Risk risk) throws InterruptedException {
-            /*
 		risk.parser("closegame");
 		synchronized (risk) {
 			while (risk.getGame() != null) {
@@ -94,6 +91,5 @@ public class AISimulationTest extends TestCase{
 				System.out.println(p);
 			}
 		}
-         */
         }
 }
