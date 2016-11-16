@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="RBStealth" name="net.yura.domination.engine.RiskControllerTest" skipped="0" tests="1" time="0.052" timestamp="2016-11-16T20:49:47">
+<testsuite errors="0" failures="0" hostname="RBStealth" name="net.yura.domination.engine.RiskControllerTest" skipped="0" tests="1" time="0.09" timestamp="2016-11-16T22:04:19">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -63,7 +63,7 @@
     <property name="dir.lobby.dist.client" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Lobby\dist\client" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.yura.domination.engine.RiskControllerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\test\results\TEST-net.yura.domination.engine.RiskControllerTest.xml crashfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junitvmwatcher8111946523711161522.properties propsfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junit8119076178284366343.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.yura.domination.engine.RiskControllerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\test\results\TEST-net.yura.domination.engine.RiskControllerTest.xml crashfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junitvmwatcher4631261779881596789.properties propsfile=C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\junit1484203211259877917.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="jnlp.descriptor" value="application" />
@@ -122,6 +122,7 @@
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 8.1\ide\docs\jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\antlr-2.7.2.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\bsf-2.3.0.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-beanutils-1.8.0.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-chain-1.2.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-digester-1.8.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-fileupload-1.1.1.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-io-1.1.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-logging-1.0.4.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\commons-validator-1.3.1.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\jstl-1.0.2.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\oro-2.0.8.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\standard-1.0.6.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-core-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-el-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-extras-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-faces-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-scripting-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-taglib-1.3.10.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\struts\struts-tiles-1.3.10.jar" />
+    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="false" />
     <property name="ant.file.Domination" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build.xml" />
     <property name="ant.home" value="C:\Program Files\NetBeans 8.1\extide\ant" />
     <property name="libs.junit_4.src" value="C:\Program Files\NetBeans 8.1\platform\docs\junit-4.12-sources.jar" />
@@ -300,9 +301,9 @@
     <property name="libs.JWSAntTasks.src" value="" />
     <property name="jar.index" value="false" />
     <property name="libs.CopyLibs.maven-pom" value="" />
-    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="game.defaultcards" value="risk.cards" />
     <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="dir.libs" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\libs\httpmime-4.1.2.jar;libs\httpcore-4.1.2.jar;lib\jnlp.jar;lib\TranslationTool.jar;lib\SwingME.jar;lib\midletrunner.jar;lib\Grasshopper.jar;lib\LobbyClient.jar;lib\jfreechart-1.0.15.jar;lib\jcommon-1.0.18.jar" />
     <property name="dir.sources" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\src:src_swing:src_mapstore" />
@@ -311,8 +312,8 @@
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="libs.javac-api.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\nb-javac-api.jar" />
     <property name="java.version" value="1.8.0_101" />
-    <property name="javadoc.version" value="false" />
     <property name="run.jvmargs.ide" value="" />
+    <property name="javadoc.version" value="false" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
     <property name="source.encoding" value="windows-1252" />
@@ -321,8 +322,8 @@
     <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
     <property name="libs.jsp-compilation-syscp.javadoc" value="" />
     <property name="file.reference.jfreechart-1.0.15.jar" value="lib/jfreechart-1.0.15.jar" />
-    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
     <property name="libs.javaee-endorsed-api-7.0.classpath" value="C:\Program Files\NetBeans 8.1\enterprise\modules\ext\javaee7-endorsed\javax.annotation-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\javaee7-endorsed\javax.xml.soap-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\javaee7-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\javaee7-endorsed\jaxws-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\javaee7-endorsed\jsr181-api.jar" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
     <property name="libs.metro.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\metro-1.4-doc.zip" />
     <property name="dir.dist" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\dist" />
     <property name="libs.struts.maven-pom" value="" />
@@ -335,14 +336,14 @@
     <property name="libs.jaxb.classpath" value="C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\jaxb1-impl.jar;C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\api\jaxb-api.jar;C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\api\jsr173_1.0_api.jar" />
     <property name="file.reference.TranslationTool.jar" value="lib/TranslationTool.jar" />
     <property name="do.depend" value="false" />
-    <property name="libs.j2me_common_ant.classpath" value="C:\Program Files\NetBeans 8.1\mobility\modules\org-netbeans-modules-j2me-common-ant.jar;C:\Program Files\NetBeans 8.1\java\modules\org-netbeans-modules-classfile.jar" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.j2me_common_ant.classpath" value="C:\Program Files\NetBeans 8.1\mobility\modules\org-netbeans-modules-j2me-common-ant.jar;C:\Program Files\NetBeans 8.1\java\modules\org-netbeans-modules-classfile.jar" />
     <property name="libs.spring-webmvc3.0.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar" />
     <property name="libs.swing-layout.classpath" value="C:\Program Files\NetBeans 8.1\platform\modules\ext\swing-layout-1.0.4.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
     <property name="libs.restlib.src" value="" />
-    <property name="javac.source" value="1.5" />
     <property name="build.generated.dir" value="build/generated" />
+    <property name="javac.source" value="1.5" />
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="java.specification.version" value="1.8" />
     <property name="java.vm.info" value="mixed mode" />
@@ -355,14 +356,14 @@
     <property name="javac.target" value="1.5" />
     <property name="built-jar.properties" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\built-jar.properties" />
     <property name="build.test.classes.dir" value="build/test/classes" />
-    <property name="annotation.processing.enabled" value="true" />
-    <property name="libs.jpa2-persistence.src" value="" />
     <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="libs.jpa2-persistence.src" value="" />
+    <property name="annotation.processing.enabled" value="true" />
     <property name="libs.jsf20.src" value="" />
     <property name="libs.jpa20-persistence.src" value="" />
     <property name="libs.jsf12.src" value="" />
-    <property name="src.drawable-mdpi.dir" value="res\drawable-mdpi" />
     <property name="libs.DataBindingME-SVG.maven-pom" value="" />
+    <property name="src.drawable-mdpi.dir" value="res\drawable-mdpi" />
     <property name="libs.struts.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\struts-1.3.10-javadoc.zip" />
     <property name="libs.javaee-web-api-7.0.src" value="" />
     <property name="libs.primefaces.src" value="" />
@@ -374,8 +375,8 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
     <property name="default.javac.source" value="1.8" />
     <property name="debug-transport-by-os" value="dt_shmem" />
-    <property name="sun.jnu.encoding" value="Cp1252" />
     <property name="libs.MySQLDriver.src" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.8.0_101-b13" />
     <property name="game.website" value="http://domination.sf.net/" />
@@ -399,16 +400,16 @@
     <property name="libs.metro.classpath" value="C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-extra-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-extra.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-rt.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\metro\webservices-tools.jar" />
     <property name="libs.jpa2-persistence.javadoc" value="C:\Program Files\NetBeans 8.1\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
     <property name="libs.DataBindingME.javadoc" value="C:\Program Files\NetBeans 8.1\mobility\modules\docs\netbeans_databindingme-api.zip" />
-    <property name="apple.laf.useScreenMenuBar" value="true" />
     <property name="java.class.path" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\jnlp.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\LobbyClient.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\LobbyServer.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\TranslationTool.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\midletrunner.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\Grasshopper.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\SwingME.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\libs\httpmime-4.1.2.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\libs\httpcore-4.1.2.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\jfreechart-1.0.15.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\classes;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\hamcrest-core-1.3.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\mockito-all-1.9.5.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\lib\junit-4.12.jar;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\test\classes;C:\Program Files\NetBeans 8.1\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.1\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.1\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.1\extide\ant\lib\ant-junit4.jar;C:\Users\Luke\AppData\Roaming\NetBeans\8.1\modules\ext\jacocoagent.jar" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.jpa20-persistence.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar" />
     <property name="os.version" value="10.0" />
     <property name="application.args" value="" />
     <property name="libs.javaee-api-7.0.maven-pom" value="" />
-    <property name="main.class.available" value="true" />
     <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="main.class.available" value="true" />
     <property name="sun.desktop" value="windows" />
     <property name="libs.hibernate4-persistence.src" value="" />
     <property name="dir.build.lobby.client.classes" value="C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\build\lobby\clientclasses" />
@@ -417,14 +418,14 @@
     <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans 8.1\ide\modules\ext\jaxb\api\jaxb-api.jar" />
     <property name="libs.javaee-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\javaee-doc-api.jar" />
     <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\eclipselink\eclipselink.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
     <property name="libs.beans-binding.javadoc" value="C:\Program Files\NetBeans 8.1\java\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="libs.CopyLibs.classpath" value="C:\Program Files\NetBeans 8.1\java\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans 8.1\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
     <property name="libs.jsp-compiler.maven-pom" value="" />
     <property name="libs.hamcrest.src" value="" />
-    <property name="run.jvmargs" value="  -javaagent:&quot;C:\Users\Luke\AppData\Roaming\NetBeans\8.1\modules\ext\jacocoagent.jar&quot;=includes=*,destfile=&quot;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\jacoco.exec-93193973654247&quot;" />
+    <property name="run.jvmargs" value="  -javaagent:&quot;C:\Users\Luke\AppData\Roaming\NetBeans\8.1\modules\ext\jacocoagent.jar&quot;=includes=*,destfile=&quot;C:\Users\Luke\Documents\SWEN\352\domination-code-1611\Domination\jacoco.exec-97665839782280&quot;" />
     <property name="libs.hibernate4-persistence.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\antlr-2.7.7.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\c3p0-0.9.2.1.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-c3p0-4.3.1.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\mchange-commons-java-0.2.3.4.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\dom4j-1.6.1.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\ehcache-core-2.4.3.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-ehcache-4.3.1.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-core-4.3.1.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\jboss-logging-3.1.3.GA.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-commons-annotations-4.0.4.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-entitymanager-4.3.1.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\javassist-3.18.1-GA.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\slf4j-api-1.6.1.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\slf4j-simple-1.6.1.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\hibernate4\hibernate-jpa-2.1-api-1.0.0.Final.jar" />
     <property name="libs.JAXB-ENDORSED.src" value="" />
     <property name="libs.testng.javadoc" value="C:\Program Files\NetBeans 8.1\platform\docs\testng-6.8.1-javadoc.zip" />
@@ -442,16 +443,16 @@
     <property name="jnlp.applet.class" value="net.yura.domination.ui.flashgui.FlashGUIApplet" />
     <property name="libs.jsp-compilation.classpath" value="C:\Program Files\NetBeans 8.1\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\jsf-2_2\javax.faces.jar;C:\Program Files\NetBeans 8.1\enterprise\modules\ext\jstl-api.jar;C:\Program Files\NetBeans 8.1\extide\ant\lib\ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
-    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="file.encoding" value="Cp1252" />
-    <property name="jdkBug6558476" value="false" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="javadoc.nonavbar" value="false" />
+    <property name="jdkBug6558476" value="false" />
     <property name="libs.spring-webmvc4.0.classpath" value="C:\Program Files\NetBeans 8.1\java\modules\ext\spring-4\spring-webmvc-4.0.1.RELEASE.jar" />
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.1\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="net.yura.domination.engine.RiskControllerTest" name="testCountListeners" time="0.007" />
+  <testcase classname="net.yura.domination.engine.RiskControllerTest" name="testCountListeners" time="0.022" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -21,7 +21,7 @@ public class ContinentTest extends TestCase {
     public void setUp() throws Exception {
         id = "CONTINENT_ID";
         name = "CONTINENT";
-        Continent c = new Continent(id, name, 5, 2);
+        c = new Continent(id, name, 5, 2);
         country = new Country(0, "c1", "Country 1", c, 0, 0);
         country2 = new Country(1, "c2", "Country 2", c, 50, 50);
         super.setUp();
@@ -77,10 +77,9 @@ public class ContinentTest extends TestCase {
     @Test
     public void testGetOwner() {
         assertEquals(null, country.getOwner());
-        
         country.setOwner(p1);
         assertEquals("Player 1", country.getOwner().toString());
-        
+
         country.setOwner(p2);
         assertEquals("Player 2", country.getOwner().toString());
     }
@@ -105,7 +104,7 @@ public class ContinentTest extends TestCase {
         assertTrue(c.isOwned(p1));
         
         c.addTerritoriesContained(country2);
-        assertFalse(c.isOwned(p1));
+        assertTrue(c.isOwned(p1));
         
         country2.setOwner(p2);
         assertTrue(c.isOwned(p2));
